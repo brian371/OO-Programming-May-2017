@@ -3,9 +3,12 @@
 ### Books
 - [Java for COBOL Programmers](https://www.amazon.com/Java-COBOL-Programmers-Programming-Byrne/dp/1584505656)
 
-### Design Patterns
+### Design Pattern Reference
 - [Design Pattern Reference](http://www.oodesign.com/)
 - [Design Patterns in Java](http://www.journaldev.com/1827/java-design-patterns-example-tutorial)
+
+### Individual Patterns
+- [Observer Pattern Gotchas](https://martinfowler.com/eaaDev/OrganizingPresentations.html#observer-gotchas)
 
 ### H2 database
 - [H2 database](http://www.h2database.com/html/main.html)
