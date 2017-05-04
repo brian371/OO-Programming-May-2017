@@ -7,7 +7,8 @@
 - [Design Pattern Reference](http://www.oodesign.com/)
 - [Design Patterns in Java](http://www.journaldev.com/1827/java-design-patterns-example-tutorial)
 
-### Individual Patterns
+### Various Links
+- [Design Patterns, Good or Bad.  Nice diagram.](https://softwareengineering.stackexchange.com/questions/9219/are-design-patterns-generally-a-force-for-good-or-bad)
 - [Observer Pattern Gotchas](https://martinfowler.com/eaaDev/OrganizingPresentations.html#observer-gotchas)
 
 ### H2 database
