@@ -10,6 +10,7 @@
 ### Various Links
 - [Design Patterns, Good or Bad.  Nice diagram.](https://softwareengineering.stackexchange.com/questions/9219/are-design-patterns-generally-a-force-for-good-or-bad)
 - [Observer Pattern Gotchas](https://martinfowler.com/eaaDev/OrganizingPresentations.html#observer-gotchas)
+- [Singletons Considred Stupid](https://sites.google.com/site/steveyegge2/singleton-considered-stupid)
 
 ### H2 database
 - [H2 database](http://www.h2database.com/html/main.html)
