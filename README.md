@@ -13,6 +13,7 @@
 - [Singletons Considred Stupid](https://sites.google.com/site/steveyegge2/singleton-considered-stupid)
 - [Command Pattern - Reasons To Use](http://stackoverflow.com/questions/32597736/why-should-i-use-the-command-design-pattern-while-i-can-easily-call-required-met)
 - [Facade - Pictue Describing](https://powerdream5.wordpress.com/tag/facade-pattern/)
+- [Adapter Pattern](http://www.brian-driscoll.com/2011/05/design-patterns-simplified-adapter.html)
 
 ### H2 database
 - [H2 database](http://www.h2database.com/html/main.html)
