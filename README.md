@@ -14,7 +14,7 @@
 - [Command Pattern - Reasons To Use](http://stackoverflow.com/questions/32597736/why-should-i-use-the-command-design-pattern-while-i-can-easily-call-required-met)
 - [Facade - Pictue Describing](https://powerdream5.wordpress.com/tag/facade-pattern/)
 - [Adapter Pattern](http://www.brian-driscoll.com/2011/05/design-patterns-simplified-adapter.html)
-- [Composite Pattern[(https://en.wikipedia.org/wiki/Composite_pattern)
+- [Composite Pattern](https://en.wikipedia.org/wiki/Composite_pattern)
 - [Decorator vs Adapter vs Facade](https://en.wikipedia.org/wiki/Decorator_pattern)
 
 ### H2 database
