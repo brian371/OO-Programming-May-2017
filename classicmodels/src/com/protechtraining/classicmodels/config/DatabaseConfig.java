@@ -12,7 +12,7 @@ public class DatabaseConfig {
 
 	private static final String DATABASE_DRIVER = "org.h2.Driver";
 	private static final String DATABASE_PASSWORD = "";
-	private static final String DATABASE_URL = "jdbc:h2:file:///c:/classfiles/classicmodelsdb";
+	private static final String DATABASE_URL = "jdbc:h2:file:///c:/classfiles/workspace/classicmodelsdb";
 	private static final String DATABASE_USERNAME = "sa";
 
 	@Bean

@@ -1,6 +1,12 @@
 package com.protechtraining.classicmodels.model;
 
+import com.protechtraining.classicmodels.patterns.strategy.MotorcyclePricingStrategy;
+import com.protechtraining.classicmodels.patterns.strategy.PricingStrategy;
+import com.protechtraining.classicmodels.patterns.strategy.StandardPricingStrategy;
+
 public class Product {
+	public static final int REORDER_QUANITY = 100;
+
 	private String code;
 	private String name;
 	private String line;
@@ -11,13 +17,27 @@ public class Product {
 	private double buyPrice;
 	private double MSRP;
 
+	private PricingStrategy pricingStrategy;
+	
+	// constructor
 	public Product() {
-
+		this(null, null, "Motorcycles");
+		System.out.println("In the constructor...");
+		//line = "Motorcycles";
 	}
 
+	public Product(String code, String name, String line) {
+		System.out.println("In the second constructor");
+		this.code = code;
+		this.name = name;
+		this.line = line;
+	}
+	
+	
 	public String getCode() {
 		return code;
 	}
+
 
 	public void setCode(String code) {
 		this.code = code;
@@ -85,6 +105,16 @@ public class Product {
 
 	public void setMSRP(double mSRP) {
 		MSRP = mSRP;
+	}
+
+	// Business methods
+	public double getSalePrice() {		
+		return pricingStrategy.calculateSalesPrice();
+	}
+	
+	
+	public void setPricingStrategy(PricingStrategy pricingStrategy) {
+		this.pricingStrategy = pricingStrategy;
 	}
 
 	@Override
