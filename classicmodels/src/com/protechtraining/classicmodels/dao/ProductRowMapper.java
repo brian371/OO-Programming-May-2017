@@ -29,7 +29,7 @@ public class ProductRowMapper implements RowMapper<Product> {
 		p.setBuyPrice(rs.getDouble("buyPrice"));
 		p.setMSRP(rs.getDouble("MSRP"));
 		
-		if ("Motorcycle".equals(coupon)) {
+		if ("15off".equals(coupon)) {
 			p.setPriceStrategy(new DiscountStrategy(p, .15));
 		}
 		return p;
