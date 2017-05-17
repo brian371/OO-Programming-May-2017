@@ -36,12 +36,11 @@ public class CustomerRestController {
 		List<Order> orders = new ArrayList<Order>();
 		
 		if ("summary".equals(orderType)) {
-			orderSummaryReport.setCustomerNumber(customerNumber);
 			template = orderSummaryReport;
 		} else {
-			orderDetailReport.setCustomerNumber(customerNumber);
 			template = orderDetailReport;
 		}
+		template.setCustomerNumber(customerNumber);
 		return template.generateReport();
 	}
 	
