@@ -10,7 +10,7 @@
 ### Various Links
 - [Design Patterns, Good or Bad.  Nice diagram.](https://softwareengineering.stackexchange.com/questions/9219/are-design-patterns-generally-a-force-for-good-or-bad)
 - [Observer Pattern Gotchas](https://martinfowler.com/eaaDev/OrganizingPresentations.html#observer-gotchas)
-- [Singletons Considred Stupid](https://sites.google.com/site/steveyegge2/singleton-considered-stupid)
+- [Singletons Considered Stupid](https://sites.google.com/site/steveyegge2/singleton-considered-stupid)
 - [Command Pattern - Reasons To Use](http://stackoverflow.com/questions/32597736/why-should-i-use-the-command-design-pattern-while-i-can-easily-call-required-met)
 - [Facade - Picture Describing](https://powerdream5.wordpress.com/tag/facade-pattern/)
 - [Adapter Pattern](http://www.brian-driscoll.com/2011/05/design-patterns-simplified-adapter.html)
