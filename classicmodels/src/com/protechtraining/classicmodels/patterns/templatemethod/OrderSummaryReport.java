@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.protechtraining.classicmodels.dao.OrderDao;
-import com.protechtraining.classicmodels.model.Order;
+import com.protechtraining.classicmodels.model.OrderImpl;
 
 @Component
 public class OrderSummaryReport extends OrderReportTemplate {
@@ -18,7 +18,7 @@ public class OrderSummaryReport extends OrderReportTemplate {
 	
 	@Override
 	public void loadBody() {
-		List<Order> orders = orderDao.findByCustomerNumber(customerNumber);
+		List<OrderImpl> orders = orderDao.findByCustomerNumber(customerNumber);
 		this.orderReport.setOrderList(orders);
 		this.orderReport.setTitle("Summary Report");
 	}

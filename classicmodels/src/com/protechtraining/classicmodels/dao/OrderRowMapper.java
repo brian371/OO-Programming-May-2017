@@ -5,13 +5,13 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.protechtraining.classicmodels.model.Order;
+import com.protechtraining.classicmodels.model.OrderImpl;
 
-public class OrderRowMapper implements RowMapper<Order> {
+public class OrderRowMapper implements RowMapper<OrderImpl> {
 
 	@Override
-	public Order mapRow(ResultSet rs, int rowNumber) throws SQLException {
-		Order o = new Order();
+	public OrderImpl mapRow(ResultSet rs, int rowNumber) throws SQLException {
+		OrderImpl o = new OrderImpl();
 		o.setOrderNumber(rs.getInt("orderNumber"));
 		o.setOrderDate(rs.getDate("orderDate"));
 		o.setRequiredDate(rs.getDate("requiredDate"));

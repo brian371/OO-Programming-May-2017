@@ -1,6 +1,7 @@
 package com.protechtraining.classicmodels.review;
 
 import com.protechtraining.classicmodels.model.Product;
+import com.protechtraining.classicmodels.model.ProductLine;
 
 
 public class ProductMain {
@@ -9,6 +10,8 @@ public class ProductMain {
 		System.out.println("Before");
 		foo();
 		System.out.println("After");
+		
+		
 	}
 	
 	public static void foo() {
@@ -16,7 +19,7 @@ public class ProductMain {
 		p.setCode("ABC");
 		System.out.println(p.toString());
 		
-		Product p2  = new Product("7383", "1969 Harley", "Motoroycle");
+		Product p2  = new Product("7383", "1969 Harley", ProductLine.Motorcycles);
 		System.out.println(p2);
 		System.gc();
 //		p = null;  // the object formally known as p is now available for garbage collection

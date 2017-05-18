@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.protechtraining.classicmodels.model.Order;
+import com.protechtraining.classicmodels.model.OrderImpl;
 
 @Repository
 public class OrderDaoImpl implements OrderDao {
@@ -17,8 +17,8 @@ public class OrderDaoImpl implements OrderDao {
 	 * @see com.protechtraining.classicmodels.dao.OrderDao#findByCustomerNumber(int)
 	 */
 	@Override
-	public List<Order> findByCustomerNumber(int customerNumber) {
-		return (List<Order>) jdbcTemplate.query("select orderNumber, orderDate," +
+	public List<OrderImpl> findByCustomerNumber(int customerNumber) {
+		return (List<OrderImpl>) jdbcTemplate.query("select orderNumber, orderDate," +
 					" requiredDate, shippedDate, status, comments, customerNumber " +
 					" from orders where customerNumber = ?",
 					new OrderRowMapper(), customerNumber);

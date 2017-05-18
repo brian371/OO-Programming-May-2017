@@ -3,7 +3,7 @@ package com.protechtraining.classicmodels.patterns.templatemethod;
 import java.util.Date;
 import java.util.List;
 
-import com.protechtraining.classicmodels.model.Order;
+import com.protechtraining.classicmodels.model.OrderImpl;
 
 public class OrderReport {
 	// header information - could be broken into another class
@@ -12,7 +12,7 @@ public class OrderReport {
 	private int customerNumber;
 	
 	// body information
-	private List<Order> orderList;
+	private List<OrderImpl> orderList;
 	
 	// footer information
 	private String footer;
@@ -48,12 +48,12 @@ public class OrderReport {
 	}
 
 
-	public List<Order> getOrderList() {
+	public List<OrderImpl> getOrderList() {
 		return orderList;
 	}
 
 
-	public void setOrderList(List<Order> orderList) {
+	public void setOrderList(List<OrderImpl> orderList) {
 		this.orderList = orderList;
 	}
 

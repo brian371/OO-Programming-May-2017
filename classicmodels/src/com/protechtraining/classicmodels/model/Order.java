@@ -2,101 +2,45 @@ package com.protechtraining.classicmodels.model;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Observable;
 
-import com.protechtraining.classicmodels.patterns.observer.WarehouseObserver;
+public interface Order {
 
-public class Order extends Observable {
-	private int orderNumber;
-	private Date orderDate;
-	private Date requiredDate;
-	private Date shippedDate;
-	private String status;
-	private String comments;
-	private int customerNumber;
-	private List<OrderDetail> orderDetails;
-	
-	public Order() {
-		super();
-		this.addObserver(new WarehouseObserver());
-	}
+	public abstract int getOrderNumber();
 
-	public int getOrderNumber() {
-		return orderNumber;
-	}
+	public abstract void setOrderNumber(int orderNumber);
 
-	public void setOrderNumber(int orderNumber) {
-		this.orderNumber = orderNumber;
-	}
+	public abstract Date getOrderDate();
 
-	public Date getOrderDate() {
-		return orderDate;
-	}
+	public abstract void setOrderDate(Date orderDate);
 
-	public void setOrderDate(Date orderDate) {
-		this.orderDate = orderDate;
-	}
+	public abstract Date getRequiredDate();
 
-	public Date getRequiredDate() {
-		return requiredDate;
-	}
+	public abstract void setRequiredDate(Date requiredDate);
 
-	public void setRequiredDate(Date requiredDate) {
-		this.requiredDate = requiredDate;
-	}
+	public abstract Date getShippedDate();
 
-	public Date getShippedDate() {
-		return shippedDate;
-	}
+	public abstract void setShippedDate(Date shippedDate);
 
-	public void setShippedDate(Date shippedDate) {
-		this.shippedDate = shippedDate;
-	}
+	public abstract String getStatus();
 
-	public String getStatus() {
-		return status;
-	}
+	public abstract void setStatus(String status);
 
-	public void setStatus(String status) {
-		this.status = status;	
-	}
-	
-	public void placeOrder() {
-		this.orderDate = new Date();
-		this.setChanged();  // marks the Order as changed (does not notify yet)
-	}
+	public abstract void placeOrder();
 
-	public String getComments() {
-		return comments;
-	}
+	public abstract String getComments();
 
-	public void setComments(String comments) {
-		this.comments = comments;
-	}
+	public abstract void setComments(String comments);
 
-	public int getCustomerNumber() {
-		return customerNumber;
-	}
+	public abstract int getCustomerNumber();
 
-	public void setCustomerNumber(int customerNumber) {
-		this.customerNumber = customerNumber;
-	}
+	public abstract void setCustomerNumber(int customerNumber);
 
-	public List<OrderDetail> getOrderDetails() {
-		return orderDetails;
-	}
+	public abstract List<OrderDetail> getOrderDetails();
 
-	public void setOrderDetails(List<OrderDetail> orderDetails) {
-		this.orderDetails = orderDetails;
-	}
-	
-	@Override
-	public String toString() {
-		return "Order [orderNumber=" + orderNumber + ", orderDate=" + orderDate
-				+ ", requiredDate=" + requiredDate + ", shippedDate="
-				+ shippedDate + ", status=" + status + ", comments=" + comments
-				+ ", customerNumber=" + customerNumber + "]";
-	}
-	
-	
+	public abstract void setOrderDetails(List<OrderDetail> orderDetails);
+
+	public abstract String toString();
+
+	public abstract double getOrderTotal();
+
 }

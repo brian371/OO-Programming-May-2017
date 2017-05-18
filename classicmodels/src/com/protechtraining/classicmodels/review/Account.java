@@ -1,9 +1,9 @@
 package com.protechtraining.classicmodels.review;
 
-public class Account {
+public class Account  {
 	// attributes or fields
 	private int accountNo;
-	private double balance;
+	protected double balance;
 
 	public Account() {
 		super();

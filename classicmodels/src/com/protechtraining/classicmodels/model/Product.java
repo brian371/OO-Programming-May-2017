@@ -9,7 +9,7 @@ public class Product {
 
 	private String code;
 	private String name;
-	private String line;
+	private ProductLine line;
 	private String scale;
 	private String vendor;
 	private String description;
@@ -21,12 +21,12 @@ public class Product {
 	
 	// constructor
 	public Product() {
-		this(null, null, "Motorcycles");
+		this(null, null, ProductLine.Motorcycles);
 		System.out.println("In the constructor...");
 		//line = "Motorcycles";
 	}
 
-	public Product(String code, String name, String line) {
+	public Product(String code, String name, ProductLine line) {
 		System.out.println("In the second constructor");
 		this.code = code;
 		this.name = name;
@@ -51,11 +51,11 @@ public class Product {
 		this.name = name;
 	}
 
-	public String getLine() {
+	public ProductLine getLine() {
 		return line;
 	}
 
-	public void setLine(String line) {
+	public void setLine(ProductLine line) {
 		this.line = line;
 	}
 
@@ -109,7 +109,7 @@ public class Product {
 
 	// Business methods
 	public double getSalePrice() {		
-		return pricingStrategy.calculateSalesPrice();
+		return pricingStrategy.calculateSalesPrice(this);
 	}
 	
 	

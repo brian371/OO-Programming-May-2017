@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.protechtraining.classicmodels.model.Order;
+import com.protechtraining.classicmodels.model.OrderImpl;
 import com.protechtraining.classicmodels.patterns.templatemethod.OrderDetailReport;
 import com.protechtraining.classicmodels.patterns.templatemethod.OrderReport;
 import com.protechtraining.classicmodels.patterns.templatemethod.OrderReportTemplate;
@@ -33,7 +33,7 @@ public class CustomerRestController {
 			@RequestParam(value="orderType", required=true) String orderType) {
 		// fetch data from database
 		OrderReportTemplate template;
-		List<Order> orders = new ArrayList<Order>();
+		List<OrderImpl> orders = new ArrayList<OrderImpl>();
 		
 		if ("summary".equals(orderType)) {
 			template = orderSummaryReport;

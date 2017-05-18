@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import com.protechtraining.classicmodels.dao.OrderDao;
 import com.protechtraining.classicmodels.dao.OrderDetailDao;
 import com.protechtraining.classicmodels.model.Order;
+import com.protechtraining.classicmodels.model.OrderImpl;
 
 @Component
 public class OrderDetailReport extends OrderReportTemplate {
@@ -21,7 +22,7 @@ public class OrderDetailReport extends OrderReportTemplate {
 	
 	@Override
 	public void loadBody() {
-		List<Order> orders = orderDao.findByCustomerNumber(customerNumber);
+		List<OrderImpl> orders = orderDao.findByCustomerNumber(customerNumber);
 		for (Order order : orders) {
 			order.setOrderDetails(orderDetailDao.findByOrderNumber(order.getOrderNumber()));
 		}
